@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/10b2fd9b1a.js" crossorigin="anonymous"></script>
+    <title>Online Furniture</title>
+  </head>
+  <body>
+    <div class="notification" id="notification"></div>
+    <!-- Navigation Bar -->
+    <nav class="primary-nav">
+      <div class="nav-logo">
+        <a href="index.html">Online Furniture</a>
+      </div>
+      <div class="search-bar">
+        <form action="shop.html" method="GET">
+          <input type="text" id="search-input" name="s" value="" placeholder="Search..." />
+        </form>
+      </div>
+      <div class="nav-buttons">
+        
+        <a href="dashboard.html" class="btn">Dashboard</a>
+        
+        <a href="cart.html" class="btn">Cart <span id="mini-cart">(1)</span></a>
+      </div>
+    </nav>
+
+    <!-- Secondary Navigation Bar -->
+    <nav class="secondary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    
+
+    <div class="main-container">
+
+    
+
+    <div class="cart-content">
+        <h2 class="cart-heading">Your Cart</h2>
+    
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Product Name</th>
+              <th>Product Image</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>1</td>
+                <td>Bed</td>
+                <td><img src="images/product1.jpg" class="cart-image"></td>
+                <td>1</td>
+                <td>$39.99</td>
+                <td>$39.99</td>
+                <td><button data-id="1" class="remove-btn">Remove</button></td>
+              </tr>
+            
+        </table>
+    
+        <div class="total-price">
+          <p>Total Price: <span id="totalAmount">$39.99</span></p>
+        </div>
+        <a href="shop.html" class="checkout-button">Countine Shopping</a>
+        <a href="checkout.html" class="checkout-button">Checkout</a>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Learn</h3>
+          <ul>
+            <li><a href="about.html">About Online Furniture</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Furniture</h3>
+          <ul>
+            <li><a href="shop.html">Bed</a></li>
+            <li><a href="shop.html">Table</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <a href="https://twitter.com/"><i class="fab fa-twitter-square" style="font-size: 38px"></i></a>
+          <a href="https://www.facebook.com//"><i class="fab fa-facebook-square" style="font-size: 38px"></i></a>
+          <a href="https://www.instagram.com//?hl=en"><i class="fab fa-instagram" style="font-size: 38px"></i></a>
+        </div>
+      </div>
+      <div class="main-footer">
+        <p>&copy; Online Furniture 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
